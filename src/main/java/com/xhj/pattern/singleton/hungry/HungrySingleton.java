@@ -9,6 +9,7 @@ package com.xhj.pattern.singleton.hungry;
 
 //缺点：类加载的时候就初始化，不管你用还是不用，我都占着空间
 
+
 //绝对线程安全，在线程还没出现以前就是实例化了，不可能存在访问安全问题
 public class HungrySingleton {
 
@@ -20,4 +21,6 @@ public class HungrySingleton {
     public static HungrySingleton getInstance() {
         return hungrySingleton;
     }
+
+
 }
