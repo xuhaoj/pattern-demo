@@ -1,8 +1,6 @@
 package com.xhj.pattern.factory.model;
 
 
-
-
 public class BmwCar implements ICar {
     @Override
     public void getBrand() {
