@@ -1,4 +1,4 @@
-package com.xhj.pattern;
+package com.xhj.pattern.singleton.test;
 
 import com.xhj.pattern.singleton.hungry.HungrySingleton;
 

@@ -2,7 +2,9 @@ package com.xhj.pattern.singleton.register;
 
 
 public enum EnumSingleton {
+
     INSTANCE;
+
     private Object data;
 
     public Object getData() {
@@ -13,7 +15,12 @@ public enum EnumSingleton {
         this.data = data;
     }
 
+    public void add() {
+        System.out.println("枚举方式");
+    }
+
     public static EnumSingleton getInstance() {
         return INSTANCE;
     }
+
 }
