@@ -1,11 +1,7 @@
 package com.xhj.pattern.prototype;
 
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.Serializable;
+import java.io.*;
 import java.util.Date;
 
 /**
@@ -27,7 +23,7 @@ public class Person implements Cloneable, Serializable {
     }
 
     @Override
-    protected Object clone() throws CloneNotSupportedException {
+    protected Object clone() {
         return this.deepClone();
     }
 
