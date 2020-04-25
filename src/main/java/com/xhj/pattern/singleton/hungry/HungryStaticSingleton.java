@@ -1,8 +1,9 @@
 package com.xhj.pattern.singleton.hungry;
 
 
-//饿汉式静态块单例
+//饿汉式静态代码块
 public class HungryStaticSingleton {
+
     private static final HungryStaticSingleton hungrySingleton;
 
     static {

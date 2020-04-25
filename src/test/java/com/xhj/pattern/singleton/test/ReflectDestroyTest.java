@@ -4,7 +4,9 @@ import com.xhj.pattern.singleton.lazy.LazyInnerClassSingleton;
 
 import java.lang.reflect.Constructor;
 
-
+/**
+ * @author jack xu
+ */
 public class ReflectDestroyTest {
 
     public static void main(String[] args) {

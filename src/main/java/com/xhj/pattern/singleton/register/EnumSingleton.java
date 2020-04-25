@@ -1,6 +1,9 @@
 package com.xhj.pattern.singleton.register;
 
 
+/**
+ * @author jack xu
+ */
 public enum EnumSingleton {
 
     INSTANCE;

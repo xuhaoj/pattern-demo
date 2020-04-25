@@ -4,7 +4,9 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 
-//Spring中的做法，就是用这种注册式单例
+/**
+ * @author jack xu
+ */
 public class ContainerSingleton {
     private ContainerSingleton() {
     }
@@ -12,19 +14,17 @@ public class ContainerSingleton {
     private static Map<String, Object> ioc = new ConcurrentHashMap<String, Object>();
 
     public static Object getInstance(String className) {
-        synchronized (ioc) {
-            if (!ioc.containsKey(className)) {
-                Object obj = null;
-                try {
-                    obj = Class.forName(className).newInstance();
-                    ioc.put(className, obj);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-                return obj;
-            } else {
-                return ioc.get(className);
+        Object instance = null;
+        if (!ioc.containsKey(className)) {
+            try {
+                instance = Class.forName(className).newInstance();
+                ioc.put(className, instance);
+            } catch (Exception e) {
+                e.printStackTrace();
             }
+            return instance;
+        } else {
+            return ioc.get(className);
         }
     }
 }

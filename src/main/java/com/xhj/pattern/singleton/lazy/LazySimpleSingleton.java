@@ -2,21 +2,22 @@ package com.xhj.pattern.singleton.lazy;
 
 
 /**
- * @author xhj
+ * @author jack xu
+ * 优点：节省了内存,线程安全
+ * 缺点：性能低
  */
 public class LazySimpleSingleton {
+
+    private static LazySimpleSingleton instance;
 
     private LazySimpleSingleton() {
     }
 
-
-    private static LazySimpleSingleton lazy = null;
-
-    public static LazySimpleSingleton getInstance() {
-        if (lazy == null) {
-            lazy = new LazySimpleSingleton();
+    public synchronized static LazySimpleSingleton getInstance() {
+        if (instance == null) {
+            instance = new LazySimpleSingleton();
         }
-        return lazy;
+        return instance;
     }
 
 }
