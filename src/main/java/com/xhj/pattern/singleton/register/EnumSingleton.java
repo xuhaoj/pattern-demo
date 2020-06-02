@@ -18,8 +18,10 @@ public enum EnumSingleton {
         this.data = data;
     }
 
-    public void add() {
-        System.out.println("枚举方式");
+
+    //添加自己需要的操作
+    public void singletonOperation() {
+        System.out.println("添加自己需要的操作");
     }
 
     public static EnumSingleton getInstance() {
