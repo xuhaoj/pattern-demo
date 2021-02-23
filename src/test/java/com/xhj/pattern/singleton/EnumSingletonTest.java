@@ -1,4 +1,4 @@
-package com.xhj.pattern.singleton.test;
+package com.xhj.pattern.singleton;
 
 import com.xhj.pattern.singleton.register.EnumSingleton;
 
