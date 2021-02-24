@@ -11,7 +11,7 @@ public class LettuceDecorator extends PancakeDecorator {
 
     @Override
     protected String getMsg() {
-        return super.getMsg() + "+1片香菜";
+        return super.getMsg() + "+1片生菜";
     }
 
     @Override

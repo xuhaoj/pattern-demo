@@ -7,7 +7,7 @@ public class BasePancake extends Pancake {
 
     @Override
     protected String getMsg() {
-        return "手抓饼";
+        return "标配手抓饼";
     }
 
     @Override
