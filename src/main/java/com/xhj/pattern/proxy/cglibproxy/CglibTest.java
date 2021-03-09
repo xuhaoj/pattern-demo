@@ -1,7 +1,5 @@
 package com.xhj.pattern.proxy.cglibproxy;
 
-import com.xhj.pattern.proxy.Son;
-
 
 public class CglibTest {
     public static void main(String[] args) {
@@ -22,9 +20,9 @@ public class CglibTest {
             //CGLib 有个坑，CGLib不能代理final的方法
 
 
-            Son obj = (Son) new CGlibMeipo().getInstance(Son.class);
+/*            Son obj = (Son) new CGlibMeipo().getInstance(Son.class);
             System.out.println(obj);
-            obj.findLove();
+            obj.findLove();*/
         } catch (Exception e) {
             e.printStackTrace();
         }
