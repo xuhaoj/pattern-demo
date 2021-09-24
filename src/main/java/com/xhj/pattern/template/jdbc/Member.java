@@ -12,4 +12,6 @@ public class Member {
     private int age;
     private String addr;
 
+    private String roleName;
+
 }
